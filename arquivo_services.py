@@ -23,7 +23,7 @@ def cadastrar_contato(contato_novo):
         print("Arquivo não encontrado")
 
 
-def buscar_contato(email_contato):
+def buscar_indice_contato(email_contato):
     try:
         with open("contatos.txt", "r") as arquivo:
             lista_contatos = arquivo.readlines()
@@ -39,7 +39,7 @@ def buscar_contato(email_contato):
 
 def buscar_contato_email(email_contato):
     try:
-        linha = buscar_contato(email_contato)
+        linha = buscar_indice_contato(email_contato)
         if linha >= 0:
             with open("contatos.txt") as arquivo:
                 listar_contatos = arquivo.readlines()
