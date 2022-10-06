@@ -45,7 +45,7 @@ while opcao_menu != 0:
                 print("Contato não encontrado")
 
     elif opcao_menu == 4:
-        contato_buscar = input("Digite o email do contato que deseja buscar: ")
+        contato_buscar = input("Digite o email do contato que deseja buscar: ") #
         contato_encontrado = buscar_contato_email(contato_buscar)
         if contato_encontrado:
             print(f"Nome: {contato_encontrado.nome} / Email: {contato_encontrado.email} / Telefone: {contato_encontrado.telefone}")
